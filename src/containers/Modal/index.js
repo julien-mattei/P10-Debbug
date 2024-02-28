@@ -5,6 +5,7 @@ import "./style.scss";
 
 const Modal = ({ opened, Content, children }) => {
   const [isOpened, setIsOpened] = useState(opened);
+  console.log(isOpened)
   return (
     <>
       {children({ isOpened, setIsOpened })}
